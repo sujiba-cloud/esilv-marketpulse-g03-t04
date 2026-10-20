@@ -9,7 +9,7 @@ Elles illustrent l’utilisation de Git, la gestion du repository, ainsi que la 
 **Description courte pour le professeur :**  
 Capture montrant l’ajout d’un fichier dans le dossier `evidence` et la préparation du commit.
 
-![Image_1](evidence/Image_1.png)
+![Image_1](evidence/Imagel1.png)
 
 ---
 
@@ -17,7 +17,7 @@ Capture montrant l’ajout d’un fichier dans le dossier `evidence` et la prép
 **Description courte pour le professeur :**  
 Capture illustrant la commande `git add` et la mise en scène des modifications avant le commit.
 
-![Image_2](evidence/Image_2.png)
+![Image_2](evidence/Imagel2.png)
 
 ---
 
@@ -25,4 +25,4 @@ Capture illustrant la commande `git add` et la mise en scène des modifications 
 **Description courte pour le professeur :**  
 Capture montrant la commande `git push` et la synchronisation réussie avec le dépôt GitHub.
 
-![image_3](evidence/image_3.png)
+![image_3](evidence/Imagel3.png)
