@@ -9,7 +9,7 @@ Elles illustrent l’utilisation de Git, la gestion du repository, ainsi que la 
 **Description courte pour le professeur :**  
 Capture montrant l’ajout d’un fichier dans le dossier `evidence` et la préparation du commit.
 
-![Evidence 1](evidence/imagel1.png)
+![Evidence 1](imagel1.png)
 
 ---
 
