@@ -17,7 +17,7 @@ Capture montrant l’ajout d’un fichier dans le dossier `evidence` et la prép
 **Description courte pour le professeur :**  
 Capture illustrant la commande `git add` et la mise en scène des modifications avant le commit.
 
-![Evidence 2](evidence/imagel2.png)
+![Evidence 2](imagel2.png)
 
 ---
 
@@ -25,4 +25,4 @@ Capture illustrant la commande `git add` et la mise en scène des modifications 
 **Description courte pour le professeur :**  
 Capture montrant la commande `git push` et la synchronisation réussie avec le dépôt GitHub.
 
-![Evidence 3](evidence/imagel3.png)
+![Evidence 3](imagel3.png)
