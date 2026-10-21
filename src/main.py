@@ -74,3 +74,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def get_first_date(prices):
+    return prices[0]["date"]
+
+def gest_last_date(prices):
+    return prices[-1]["date"]
+    
