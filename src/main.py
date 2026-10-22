@@ -1,5 +1,6 @@
 #Anthony, Sujiba, noufra
 # 40%, 40%, 20%
+#Pull request TD5
 from pathlib import Path
 import csv
 import json
