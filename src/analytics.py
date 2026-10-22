@@ -1,3 +1,4 @@
+
 """MarketPulse analytics: pure functions for comparison (TD07)."""
 
 
