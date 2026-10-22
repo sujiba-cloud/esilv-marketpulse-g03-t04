@@ -2,18 +2,12 @@
 # 49.5%, 50%, 0.5%
 #Pull request TD5
 
-from src.analytics import (
-    align_series,
-    calculate_period_return,
-    calculate_base_100,
-    calculate_relative_performance,
-)
 
 from pathlib import Path
 import csv
 import json
 
-from src.analytics import (
+from analytics import (
     align_series,
     calculate_period_return,
     calculate_base_100,
