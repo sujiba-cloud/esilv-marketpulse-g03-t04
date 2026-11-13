@@ -1,5 +1,4 @@
 #Anthony, Sujiba, noufra
-# 49.5%, 50%, 0.5%
 #Pull request TD5
 
 
@@ -13,6 +12,7 @@ from analytics import (
     calculate_base_100,
     calculate_relative_performance,
 )
+from providers.yahoo_provider import fetch_yahoo_prices
 
 DATA_DIR = Path("data/sample")
 
@@ -21,6 +21,9 @@ DATA_DIR = Path("data/sample")
 # Parsing YAML is optional and is not required by the 18-hour lab sequence.
 LOOKBACK_LABEL = "1 month"
 INTERVAL_LABEL = "Daily"
+PROVIDER = "yahoo"   
+LOOKBACK = "1mo"     
+INTERVAL = "1d"     
 
 
 def load_instruments():
@@ -60,13 +63,17 @@ def display_market_summary(asset, prices, show_currency=True):
 
 def main():
     instruments = load_instruments()
-    prices = load_prices()
 
     instrument = instruments["instrument"]
     benchmark = instruments["benchmark"]
 
-    instrument_prices = filter_prices(prices, instrument["ticker"])
-    benchmark_prices = filter_prices(prices, benchmark["ticker"])
+    if PROVIDER == "yahoo":
+        instrument_prices = fetch_yahoo_prices(instrument["ticker"], LOOKBACK, INTERVAL)
+        benchmark_prices = fetch_yahoo_prices(benchmark["ticker"], LOOKBACK, INTERVAL)
+    else:
+        prices = load_prices()
+        instrument_prices = filter_prices(prices, instrument["ticker"])
+        benchmark_prices = filter_prices(prices, benchmark["ticker"])
 
         # --- Comparaison instrument vs benchmark ---
     aligned_instrument, aligned_benchmark = align_series(
