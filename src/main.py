@@ -1,5 +1,4 @@
 #Anthony, Sujiba, noufra
-# 49.5%, 50%, 0.5%
 #Pull request TD5
 
 
